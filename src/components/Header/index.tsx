@@ -47,7 +47,7 @@ const Header = ({ toggleSidebar = () => { } }: any) => {
                                 </button>
                                 <div className="absolute top-0 left-1/2 transform translate-y-8 -translate-x-2 w-4 h-4 bg-white border-t border-l rotate-45"></div>
 
-                                <div className="absolute  -right-32  mt-2 w-80 bg-white border
+                                <div className="absolute  -right-24  mt-2 w-80 bg-white border
                                  rounded-lg shadow-2xl">
                                     <div className="flex items-center justify-between p-5 bg-slate-100">
                                         <h3 className="text-xl font-semibold text-gray-800">Notification</h3>
