@@ -9,6 +9,7 @@ export const users = [
     country: "USA",
     role: "Python Developer",
     image: user01,
+    email:"Robert@gmail.com",
     bgColor: "bg-yellow-100",
   },
   {
@@ -16,6 +17,7 @@ export const users = [
     country: "UK",
     role: "Frontend Developer",
     image: user02,
+    email:"Jane@gmail.com",
     bgColor: "bg-blue-100",
   },
   {
@@ -23,6 +25,7 @@ export const users = [
     country: "Canada",
     role: "Backend Developer",
     image: user03,
+    email:"John@gmail.com",
     bgColor: "bg-gray-100",
   },
   {
@@ -30,6 +33,25 @@ export const users = [
     country: "Australia",
     role: "Full Stack Developer",
     image: user01,
+    email:"Alice@gmail.com",
     bgColor: "bg-slate-100",
   },
+  {
+    name: 'Jane Cooper',
+    country: 'Regional Paradigm Technician',
+    role: 'Admin',
+    image:user02,
+    email: 'jane.cooper(@example.com',
+    bgColor: "bg-red-100",
+  },
+  {
+    name: 'Cody Fisher',
+    title: 'Product Directives Officer',
+    role: 'Owner',
+    image: user01,
+    email: 'cody.fisher(@example.com',
+    bgColor: "bg-pink-100",
+  }
 ];
+
+

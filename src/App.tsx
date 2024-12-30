@@ -7,6 +7,8 @@ import Profile from "./components/Profile/Profile"
 import Stats from "./components/Stats/Stats"
 import Team from "./components/Team"
 import Event from "./components/Event"
+import DataTable from "./ui/DataTable"
+import Calendar from "./ui/Calender"
 
 const App = () => {
 
@@ -26,14 +28,18 @@ const App = () => {
             <div className="flex gap-3 flex-col xl:flex-row ">
               <Team />
               <Event />
-
             </div>
           </Content>
           <Profile />
-
         </Main>
+        <div className="text-gray-500 bg-gray-100 p-4 sm:ml-64 mt-0">
+
+
+        </div>
+
 
       </div>
+
     </>
   )
 }

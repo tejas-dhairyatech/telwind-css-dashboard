@@ -1,3 +1,4 @@
+import Calendar from "../../ui/Calender"
 import { empolyeesData } from "../../utils/constants/employees"
 import Balance from "./Balance"
 import Card from "./Card"
@@ -5,8 +6,8 @@ import Card from "./Card"
 function Stats() {
     return (
         <>
-            <div className="flex flex-col md:flex-row gap-5">
-                <div className="flex flex-col gap-4 h-full">
+            <div className="flex flex-col md:flex-row gap-5 ">
+                <div className="flex flex-col mt-4 gap-4 h-full md:w-1/2 xl:w-2/5">
                     {empolyeesData.map((emp, ind) => {
                         return (
                             <>
@@ -15,7 +16,7 @@ function Stats() {
                         )
                     })}
                 </div>
-                <Balance />
+                <Calendar />
             </div>
 
         </>

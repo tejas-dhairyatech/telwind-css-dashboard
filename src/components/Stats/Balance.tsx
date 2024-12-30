@@ -6,7 +6,7 @@ const Balance = () => {
 
 
     return (
-        <div className="bg-white p-5 rounded-2xl 
+        <div className="bg-white p-5 rounded-2xl mt-4
         flex-1">
             <div className="flex items-center justify-between">
                 <Title>Balance</Title>

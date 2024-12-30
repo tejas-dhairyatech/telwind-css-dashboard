@@ -45,7 +45,7 @@ const Header = ({ toggleSidebar = () => { } }: any) => {
                                         </span>
                                     )}
                                 </button>
-                                <div className="absolute top-0 left-1/2 transform translate-y-8 -translate-x-2 w-4 h-4 bg-white border-t border-l rotate-45"></div>
+                                {/* <div className="absolute top-0 left-1/2 transform translate-y-8 -translate-x-2 w-4 h-4 bg-white border-t border-l rotate-45"></div>
 
                                 <div className="absolute  -right-24  mt-2 w-80 bg-white border
                                  rounded-lg shadow-2xl">
@@ -109,7 +109,7 @@ const Header = ({ toggleSidebar = () => { } }: any) => {
 
                                     </div>
 
-                                </div>
+                                </div> */}
 
 
                             </div>
