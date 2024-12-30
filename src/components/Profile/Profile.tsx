@@ -1,4 +1,3 @@
-import { DonutChart } from "./DonutChart"
 import Shortcut from "./Shortcut"
 import { User } from "./User"
 
@@ -8,7 +7,7 @@ const Profile = () => {
         lg:w-60 xl:w-80 flex flex-col gap-4">
             <User />
             <Shortcut />
-            <DonutChart />
+            {/*<DonutChart /> */}
         </div>
     )
 }

@@ -1,5 +1,8 @@
-import Calendar from "../../ui/Calender"
+import Calendar from "../../ui/Calender/Calender"
+import DataTable from "../../ui/DataTable"
 import { empolyeesData } from "../../utils/constants/employees"
+import { users } from "../../utils/constants/user"
+import { DonutChart } from "../Profile/DonutChart"
 import Card from "./Card"
 
 function Stats() {
@@ -14,9 +17,16 @@ function Stats() {
                             </>
                         )
                     })}
+                    <DonutChart />
+
                 </div>
                 <Calendar />
+                <div>
+                    <DataTable data={users} />
+                </div>
+
             </div>
+
 
         </>
     )

@@ -6,10 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       fontFamily: {
         sans: ['Quicksand', 'sans-serif'],
       },
     },
+
   },
   plugins: [],
   darkMode: "class"
