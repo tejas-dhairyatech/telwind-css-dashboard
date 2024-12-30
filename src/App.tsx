@@ -7,8 +7,6 @@ import Profile from "./components/Profile/Profile"
 import Stats from "./components/Stats/Stats"
 import Team from "./components/Team"
 import Event from "./components/Event"
-import DataTable from "./ui/DataTable"
-import Calendar from "./ui/Calender"
 
 const App = () => {
 

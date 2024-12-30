@@ -15,7 +15,7 @@ interface Attendance {
 const Calendar: React.FC = () => {
     const [currentMonth, setCurrentMonth] = useState(new Date());
     const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
-    const [attendance, setAttendance] = useState<Attendance>({
+    const [attendance] = useState<Attendance>({
         "2024-12-30": [
             { id: 1, name: "John Doe", status: "Present" },
             { id: 2, name: "Jane Smith", status: "Absent" },

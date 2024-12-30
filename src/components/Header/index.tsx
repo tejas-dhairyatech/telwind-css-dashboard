@@ -3,9 +3,6 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
 import user01 from "../../assets/images/user01.png"
-import { PiCheckCircle, PiToolboxThin } from "react-icons/pi";
-import { FaRegCommentDots } from "react-icons/fa";
-import { FcSettings } from "react-icons/fc";
 
 
 const Header = ({ toggleSidebar = () => { } }: any) => {

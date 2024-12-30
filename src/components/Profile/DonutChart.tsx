@@ -1,5 +1,4 @@
 import Chart from "react-apexcharts"
-import { ApexOptions } from "apexcharts";
 
 
 export const DonutChart = () => {

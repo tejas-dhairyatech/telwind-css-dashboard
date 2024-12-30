@@ -1,5 +1,4 @@
 import { links } from "../../utils/constants/menu-link";
-import { LinkProps } from "../../utils/types/LinkProps";
 import LinkItem from "./LinkItem";
 
 const Sidebar = ({ isSidebarOpen }: any) => {
