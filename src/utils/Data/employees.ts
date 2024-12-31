@@ -5,7 +5,7 @@ export const empolyeesData = [
     title: "Total Empolyees",
     icon: IoIosPerson,
     count: 200,
-    bgColor: "bg-gray-100",
+    bgColor: "bg-red-100",
   },
   {
     title: "On Leave",

@@ -1,44 +1,14 @@
-import { useState } from "react"
-import Header from "./components/Header"
-import Sidebar from "./components/Sidebar"
-import Main from "./ui/Main"
-import Content from "./ui/Content"
-import Stats from "./components/Stats/Stats"
+// src/App.tsx
 
-const App = () => {
+import React from 'react';
+import router from './routes';
+import { RouterProvider } from 'react-router-dom';
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  }
 
+const App: React.FC = () => {
   return (
-    <>
-      <div className="font-quickSand">
-        <Header toggleSidebar={toggleSidebar} />
-        <Sidebar isSidebarOpen={isSidebarOpen} />
-        <Main>
-          <Content>
-            <Stats />
-            {/* <div className="flex gap-3 flex-col xl:flex-row ">
-              <Team />
-              <Event />
-            </div> */}
+    <RouterProvider router={router} />
+  );
+};
 
-          </Content>
-
-          {/* <Profile /> */}
-        </Main>
-        <div className="text-gray-500 bg-gray-100 p-4 sm:ml-64 mt-0">
-
-
-        </div>
-
-
-      </div>
-
-    </>
-  )
-}
-
-export default App
+export default App;

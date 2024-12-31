@@ -1,7 +1,7 @@
-import { links } from "../../utils/constants/menu-link";
+import { links } from "../../utils/Data/menu-link";
 import LinkItem from "./LinkItem";
 
-const Sidebar = ({ isSidebarOpen }: any) => {
+const Sidebar = ({ activePath, isSidebarOpen }: any) => {
     return (
         <>
             <aside className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20
@@ -13,7 +13,7 @@ const Sidebar = ({ isSidebarOpen }: any) => {
                             links.map((linkObj, index) => {
                                 return (
                                     <>
-                                        <LinkItem key={index} {...linkObj} />
+                                        <LinkItem key={index} {...linkObj} activePath={activePath} />
                                     </>
                                 )
                             })

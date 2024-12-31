@@ -8,5 +8,6 @@ export interface LinkProps{
     bedge?:{
         text:string,
         color:string
-    }
+    },
+    activePath:string
 }

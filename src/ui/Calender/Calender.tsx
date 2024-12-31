@@ -9,40 +9,12 @@ import {
     isSameMonth,
     isSameDay,
 } from "date-fns";
-import List from "./List";
+import CalendarProps from "../../utils/types/CalendarProps";
 
-const Calendar: React.FC = () => {
+
+const Calendar: React.FC<CalendarProps> = ({ selectedDate, setSelectedDate }) => {
     const [currentMonth, setCurrentMonth] = useState(new Date());
-    const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
-    const [attendance] = useState<any>({
-        "2024-12-30": [
-            {
-                name: "Robert Fox",
-                country: "Syam Park 2, Panchasar",
-                image: "https://randomuser.me/api/portraits/men/1.jpg", // Link to the profile image
-                role: "Std : 2",
-                bgColor: "bg-yellow-100",
-            },
-            {
-                name: "John Doe",
-                country: "USA",
-                image: "https://randomuser.me/api/portraits/men/2.jpg",
-                role: "Std : 3",
-                bgColor: "bg-blue-100",
-            },
-            {
-                name: "Jane Smith",
-                country: "India",
-                image: "https://randomuser.me/api/portraits/women/3.jpg",
-                role: "Std : 4",
-                bgColor: "bg-green-100",
-            },
-        ],
-        "2024-12-31": [
-            { id: 3, name: "Emily Johnson", status: "Present" },
-            { id: 4, name: "Michael Brown", status: "Present" },
-        ],
-    });
+
 
     // const [events] = useState<any>({
     //     "2024-12-30": [
@@ -130,13 +102,6 @@ const Calendar: React.FC = () => {
         return <div>{rows}</div>;
     };
 
-    const getAttendanceForDate = () => {
-        const dateKey = selectedDate ? format(selectedDate, "yyyy-MM-dd") : "";
-        console.log("Date Key :: ", selectedDate);
-
-        return attendance[dateKey] || [];
-
-    };
 
     // const getEventsForDate = () => {
     //     const dateKey = selectedDate ? format(selectedDate, "yyyy-MM-dd") : "";
@@ -151,13 +116,7 @@ const Calendar: React.FC = () => {
                 <div className="p-2">{renderCells()}</div>
 
             </div>
-            <div className="bg-white max-w-lg mt-5">
-                <h2 className="text-lg font-bold">
-                    {selectedDate ? format(selectedDate, "EEEE, MMMM d") : "Select a Date"}
-                </h2>
-            </div>
 
-            <List title="User Attendance" items={getAttendanceForDate()} type="user" />
 
         </div>
     );

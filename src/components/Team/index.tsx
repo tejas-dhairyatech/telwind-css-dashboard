@@ -1,5 +1,5 @@
 import Title from "../../ui/Title"
-import { users } from "../../utils/constants/user"
+import { users } from "../../utils/Data/user"
 import Member from "./Member"
 
 const Team = () => {

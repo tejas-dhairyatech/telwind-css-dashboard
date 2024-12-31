@@ -6,13 +6,13 @@ interface ListItem {
     name: string;
     status?: string; // For users
     date?: string;   // For events
+
 }
 
 interface ListProps {
     title: string;
     items: ListItem[];
     type: "user" | "event"; // Type of the list
-
 }
 
 const List: React.FC<ListProps> = ({ title, items, type }) => {

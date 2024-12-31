@@ -3,12 +3,12 @@ import { FaChartBar, FaFacebookMessenger, FaUsers } from "react-icons/fa";
 
 export const links =[
     {
-        href:"#",
+        href:"/dashboard",
         icon:FaChartBar,
         text:"Dashboard"
     },
     {
-        href:"#",
+        href:"/inbox",
         icon:FaFacebookMessenger,
         text:"Inbox",
         bedge:{
@@ -17,7 +17,7 @@ export const links =[
         }
     },
     {
-        href:"#",
+        href:"/user",
         icon:FaUsers,
         text:"User",
         bedge:{
@@ -26,13 +26,13 @@ export const links =[
         }
     },
     {
-        href:"#",
+        href:"/sign-in",
         icon:CiLogin,
         text:"Sign In",
         
     },
     {
-        href:"#",
+        href:"/sign-up",
         icon:CiLogout,
         text:"Sign Up",
         

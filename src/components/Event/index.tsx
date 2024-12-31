@@ -1,5 +1,5 @@
 import Title from '../../ui/Title'
-import { events } from '../../utils/constants/event'
+import { events } from '../../utils/Data/event'
 import Item from './Item'
 
 const Event = () => {
