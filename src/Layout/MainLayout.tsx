@@ -27,7 +27,8 @@ const MainLayout: React.FC = () => {
         <>
             <div className="font-quickSand">
                 <Header toggleSidebar={toggleSidebar} />
-                <Sidebar activePath={paths[0]?.label || MENU.DASHBOARD} isSidebarOpen={isSidebarOpen} />
+                <Sidebar activePath={paths[0]?.label || MENU.DASHBOARD}
+                    isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
                 <Main>
 
                     <Content>

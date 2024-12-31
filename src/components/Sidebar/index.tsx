@@ -1,7 +1,7 @@
 import { links } from "../../utils/Data/menu-link";
 import LinkItem from "./LinkItem";
 
-const Sidebar = ({ activePath, isSidebarOpen }: any) => {
+const Sidebar = ({ activePath, isSidebarOpen, toggleSidebar }: any) => {
     return (
         <>
             <aside className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20
@@ -13,7 +13,7 @@ const Sidebar = ({ activePath, isSidebarOpen }: any) => {
                             links.map((linkObj, index) => {
                                 return (
                                     <>
-                                        <LinkItem key={index} {...linkObj} activePath={activePath} />
+                                        <LinkItem key={index} {...linkObj} onClick={toggleSidebar} activePath={activePath} />
                                     </>
                                 )
                             })

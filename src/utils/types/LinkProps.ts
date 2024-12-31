@@ -9,5 +9,6 @@ export interface LinkProps{
         text:string,
         color:string
     },
-    activePath:string
+    activePath:string,
+    onClick: () => void;
 }

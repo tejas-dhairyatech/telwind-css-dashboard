@@ -1,6 +1,8 @@
 import { Navigate } from "react-router-dom";
 import Stats from "../components/Stats/Stats";
 import MainLayout from "../Layout/MainLayout";
+import DataTable from "../ui/DataTable";
+import { users } from "../utils/Data/user";
 
 
 const MainRoute = {
@@ -14,6 +16,10 @@ const MainRoute = {
         {
             path: '/',
             element: <Navigate to="/dashboard" replace />
+        },
+        {
+            path: '/user',
+            element: <DataTable data={users} />
         },
 
     ]
