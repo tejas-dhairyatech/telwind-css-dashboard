@@ -67,6 +67,7 @@ const DataTable = ({ data }: { data: any[] }) => {
                                             type="checkbox"
                                             className="absolute opacity-0 peer"
                                         />
+
                                         <span className="w-6 h-6 border-4 border-gray-300 rounded-full flex items-center justify-center 
                                                         peer-checked:bg-blue-500 peer-checked:border-blue-500 
                                                         peer-focus:ring-2 peer-focus:ring-blue-400 transition-all duration-300 
