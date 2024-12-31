@@ -1,7 +1,6 @@
 import { LinkProps } from "../../utils/types/LinkProps";
 
 const LinkItem = ({ href, text, bedge, icon: Icon, activePath }: LinkProps) => {
-    console.log("Link : ", text);
 
     return (
         <>
