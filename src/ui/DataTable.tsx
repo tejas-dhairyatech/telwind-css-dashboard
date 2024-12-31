@@ -45,7 +45,7 @@ const DataTable = ({ data }: { data: any[] }) => {
             <div className="lg:hidden">
                 <div className="p-6 bg-gray-100 min-h-screen">
                     <h1 className="text-2xl font-bold text-gray-800 mb-6">Team Members</h1>
-                    <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {data.map((user, index) => (
                             <div
                                 key={index}
