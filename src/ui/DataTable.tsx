@@ -56,9 +56,9 @@ const DataTable = ({ data }: { data: any[] }) => {
                                     alt={user.name}
                                     className="h-16 w-16 rounded-full object-cover"
                                 />
-                                <h2 className="text-lg font-bold text-gray-800">{user.name}</h2>
-                                <p className="text-sm text-gray-600">{user.country}</p>
-                                <span className={`${user.bgColor} px-2 py-1 rounded-full text-xs font-semibold`}>
+                                <h2 className="text-sm md:text-lg font-bold text-gray-800 ">{user.name}</h2>
+                                <p className="text-sm md:text-md text-gray-600">{user.country}</p>
+                                <span className={`${user.bgColor} px-2 py-1 rounded-full text-xs font-bold `}>
                                     {user.role}
                                 </span>
                                 <label className="flex items-center gap-2 mt-4 cursor-pointer">
