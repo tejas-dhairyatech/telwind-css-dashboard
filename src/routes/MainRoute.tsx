@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import Stats from "../components/Stats/Stats";
 import MainLayout from "../Layout/MainLayout";
 
