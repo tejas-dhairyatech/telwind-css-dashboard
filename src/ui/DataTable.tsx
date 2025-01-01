@@ -1,8 +1,11 @@
+
 const DataTable = ({ data }: { data: any[] }) => {
+
+
     return (
         <>
             {/* Desktop/Table View */}
-            <div className="overflow-x-auto hidden lg:block">
+            <div className="overflow-x-auto hidden">
                 <table className="min-w-full table-auto border-collapse border border-gray-200 bg-white shadow-md rounded-lg">
                     <thead className="bg-gray-100">
                         <tr>
@@ -42,7 +45,7 @@ const DataTable = ({ data }: { data: any[] }) => {
             </div>
 
             {/* Mobile/Grid View */}
-            <div className="lg:hidden">
+            <div className="">
                 <div className="p-6 bg-gray-100 min-h-screen">
                     <h1 className="text-2xl font-bold text-gray-800 mb-6">Team Members</h1>
                     <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6">

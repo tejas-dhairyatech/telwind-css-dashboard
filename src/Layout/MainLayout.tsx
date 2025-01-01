@@ -3,8 +3,6 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
-import Main from '../ui/Main';
-import Content from '../ui/Content';
 import { Outlet, useLocation } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import { MENU } from '../utils/constants/menu';
@@ -29,16 +27,17 @@ const MainLayout: React.FC = () => {
                 <Header toggleSidebar={toggleSidebar} />
                 <Sidebar activePath={paths[0]?.label || MENU.DASHBOARD}
                     isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-                <Main>
 
-                    <Content>
-                        <div className="px-4 py-4">
-                            {/* Add Breadcrumb here */}
-                            <Breadcrumb paths={paths} />
-                        </div>
-                        <Outlet />
-                    </Content>
-                </Main>
+                <div className="text-gray-500 bg-slate-200 p-4 sm:ml-64 gap-1 
+            translate-all duration-300 mt-14 ">
+
+                    <div className="px-4 py-4">
+                        {/* Add Breadcrumb here */}
+                        <Breadcrumb paths={paths} />
+                    </div>
+                    <Outlet />
+
+                </div>
             </div>
         </>
 
