@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 import Stats from "../components/Stats/Stats";
-import MainLayout from "../layout/MainLayout";
+import MainLayout from "../Layout/MainLayout";
 import DataTable from "../ui/DataTable";
 import { users } from "../utils/Data/user";
 
