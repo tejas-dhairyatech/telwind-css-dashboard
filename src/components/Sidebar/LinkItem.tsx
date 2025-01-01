@@ -3,6 +3,8 @@ import { LinkProps } from "../../utils/types/LinkProps";
 
 const LinkItem = ({ href, text, bedge, icon: Icon, activePath, onClick }: LinkProps) => {
 
+
+
     return (
         <>
             <li className={`transform transition duration-300 
@@ -13,7 +15,9 @@ const LinkItem = ({ href, text, bedge, icon: Icon, activePath, onClick }: LinkPr
                     <span className="flex-1 me-3">{text}</span>
                     {bedge && <span className={`inline-flex items-center justify-center px-2 ms-3 text-sm font-medium rounded-full ${bedge.color}`}>{bedge.text}</span>}
                 </Link>
+
             </li>
+
         </>
     );
 }
