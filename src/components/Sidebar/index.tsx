@@ -1,7 +1,18 @@
+import { useTranslation } from "react-i18next";
 import { links } from "../../utils/Data/menu-link";
 import LinkItem from "./LinkItem";
+import { useState } from "react";
 
 const Sidebar = ({ activePath, isSidebarOpen, toggleSidebar }: any) => {
+    const { t, i18n } = useTranslation();
+
+    const [language, setLanguage] = useState("en"); // Default language
+
+    const toggleLanguage = () => {
+        setLanguage(language === "gu" ? "en" : "gu");
+        i18n.changeLanguage(language === "gu" ? "en" : "gu");
+
+    };
     return (
         <>
             <aside className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20
@@ -18,6 +29,36 @@ const Sidebar = ({ activePath, isSidebarOpen, toggleSidebar }: any) => {
                                 )
                             })
                         }
+                        <div className="flex items-center py-10 px-3">
+
+                            {/* Language Switch */}
+                            <div
+                                className="relative flex items-center w-36 pl-2 h-10 bg-gray-200 rounded-full cursor-pointer"
+                                onClick={toggleLanguage}
+                            >
+                                {/* Sliding Toggle */}
+                                <div
+                                    className={`absolute h-8 w-16 bg-blue-500 rounded-full transform transition-transform duration-200 ${language === "gu" ? "translate-x-full" : "translate-x-0"
+                                        }`}
+                                ></div>
+
+                                {/* Gujarati Label */}
+                                <span
+                                    className={`w-1/2 text-center text-sm font-medium ${language === "gu" ? "text-gray-700" : "text-white"
+                                        }`}
+                                >
+                                    ગુજરાતી
+                                </span>
+
+                                {/* English Label */}
+                                <span
+                                    className={`w-1/2 text-center text-sm font-medium ${language === "en" ? "text-gray-700" : "text-white"
+                                        }`}
+                                >
+                                    English
+                                </span>
+                            </div>
+                        </div>
                     </ul>
                 </div>
 
