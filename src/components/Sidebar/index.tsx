@@ -4,7 +4,7 @@ import LinkItem from "./LinkItem";
 import { useState } from "react";
 
 const Sidebar = ({ activePath, isSidebarOpen, toggleSidebar }: any) => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     const [language, setLanguage] = useState("en"); // Default language
 
