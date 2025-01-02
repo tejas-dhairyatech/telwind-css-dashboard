@@ -32,7 +32,7 @@ export const links =[
         
     },
     {
-        href:"/sign-up",
+        href:"/form-user",
         icon:CiLogout,
         text:"Sign Up",
         

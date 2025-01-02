@@ -3,6 +3,7 @@ import Stats from "../components/Stats/Stats";
 import MainLayout from "../Layout/MainLayout";
 import DataTable from "../ui/DataTable";
 import { users } from "../utils/Data/user";
+import Form from "../ui/Form";
 
 
 const MainRoute = {
@@ -20,6 +21,10 @@ const MainRoute = {
         {
             path: '/user',
             element: <DataTable data={users} />
+        },
+        {
+            path: '/form-user',
+            element: <Form />
         },
 
     ]
