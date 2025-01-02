@@ -3,7 +3,8 @@ import Stats from "../components/Stats/Stats";
 import MainLayout from "../Layout/MainLayout";
 import DataTable from "../ui/DataTable";
 import { users } from "../utils/Data/user";
-import Form from "../ui/Form";
+import Form from "../ui/Form/Form";
+import DateFilter from "../ui/DateFilter";
 
 
 const MainRoute = {
@@ -26,6 +27,11 @@ const MainRoute = {
             path: '/form-user',
             element: <Form />
         },
+        {
+            path: '/date-filter',
+            element: <DateFilter />
+        },
+
 
     ]
 };

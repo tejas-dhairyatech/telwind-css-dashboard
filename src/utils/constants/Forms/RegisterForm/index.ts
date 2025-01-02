@@ -1,4 +1,5 @@
 export const REGISTER_FORM = {
-    INPUT: 'input',
-    SELECT:"select"
+    TEXT: 'text',
+    SELECT:"select",
+    PHONE_NUMBER:"phone_number"
 };
