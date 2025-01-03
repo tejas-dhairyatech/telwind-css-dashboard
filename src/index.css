@@ -4,3 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Css */
+
+/* Other Input Label */
+.input-label {
+    @apply text-gray-900                             font-semibold mb-1
+}
+
+/* Other Input Field*/
+.input-field{
+    @apply p-2 border border-gray-300 rounded-lg 
+    focus:outline-none focus:ring-2 focus:ring-blue-500
+}
+
+

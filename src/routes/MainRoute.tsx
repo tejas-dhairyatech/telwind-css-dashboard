@@ -4,7 +4,7 @@ import MainLayout from "../Layout/MainLayout";
 import DataTable from "../ui/DataTable";
 import { users } from "../utils/Data/user";
 import Form from "../ui/Form/Form";
-import DateFilter from "../ui/DateFilter";
+import SearchFilter from "../ui/SearchFilter";
 
 
 const MainRoute = {
@@ -29,7 +29,7 @@ const MainRoute = {
         },
         {
             path: '/date-filter',
-            element: <DateFilter />
+            element: <SearchFilter />
         },
 
 
